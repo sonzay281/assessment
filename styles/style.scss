@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.products-container {
+    flex-direction: column;
+    overflow: hidden;
+    .products {
+        padding: 1rem;
+        display: flex;
+        overflow-y: auto;
+        gap: 4px;
+        flex-direction: row;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scroller {
+        height: 3rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 1rem;
+        display: none;
+
+        button {
+            flex-basis: auto;
+            display: flex;
+        }
+    }
+    .dots,
+    .mobile-mask {
+        display: flex;
+    }
+    .dots,
+    .filter-wrapper,a {
+        z-index: 1000;
+    }
+    .filter-wrapper {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 1rem;
+        display: flex;
+        label {
+            left: 4px;
+            top: 0;
+        }
+        select {
+            width: 100%;
+            &:focus {
+                ~ lable {
+                    left: 0px;
+                }
+            }
+        }
+
+        div {
+            flex-basis: 100%;
+        }
+    }
+    .mobile-mask {
+        height: 100%;
+        width: 100%;
+        background-color: #00000000;
+        position: fixed;
+    }
+    .dots {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        div {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background-color: #cfcfcf;
+            &.active {
+                background-color: #000;
+            }
+        }
+    }
+    @media (min-width: 480px) {
+        .scroller {
+            display: flex;
+        }
+        .dots,
+        .mobile-mask {
+            display: none;
+        }
+        .filter-wrapper {
+            div {
+                flex-basis: 25%;
+            }
+            label {
+                left: 10px;
+                top: 0;
+            }
+        }
+    }
+}

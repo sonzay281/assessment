@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main>
+    <section>
+      <p
+        class="a b c d e f g h i j k l m n o p q r s t u v w x"
+        role="heading"
+      >
+        Volvo Cars
+      </p>
+      <div
+        class="ab ac ae af ag ah ai y z products-container"
+      >
+        <span
+          class="filter-wrapper"
+        >
+          <div
+            class="ac af ah aj ak al z"
+          >
+            <div
+              class="ac af ah aj ak am z"
+            >
+              <select
+                class="a al an ao ap aq ar as at au av aw ax ay az b ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz c ca cb cc cd y"
+                id="vcc-ui-select-input-1"
+                title="Select option to filter by bodytype"
+              >
+                <option
+                  value=""
+                />
+              </select>
+              <label
+                class="a an aq ce cf cg ch ci cj ck cl cm cn h"
+                for="vcc-ui-select-input-1"
+              >
+                Filter by Bodytype
+              </label>
+            </div>
+          </div>
+        </span>
+        <div
+          class="ab ac ae af ag ah y z mobile-mask"
+        />
+        <div
+          class="ab ac ae af ag ah y z products"
+        />
+        <div
+          class="ac af ah aj ak z dots"
+        />
+        <div
+          class="ac af ah aj ak z scroller"
+        >
+          <button
+            aria-label="Slide Left"
+            class="ah ar as at c cu cv cw cx cy cz da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dw dx y"
+            type="button"
+          >
+            <img
+              alt=""
+              class="co cp cq cr cs ct y"
+              height="24"
+              role="presentation"
+              src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevronback-24.svg#light-primary"
+              width="24"
+            />
+          </button>
+          <button
+            aria-label="Slide Right"
+            class="ah ar as at c cu cv cw cx cy cz da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dw dy y"
+            type="button"
+          >
+            <img
+              alt=""
+              class="co cp cq cr cs ct y"
+              height="24"
+              role="presentation"
+              src="https://www.volvocars.com/static/shared/icons/v2/navigation-chevronforward-24.svg#light-primary"
+              width="24"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
